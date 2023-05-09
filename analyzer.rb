@@ -37,3 +37,9 @@ puts "#{total_characters} characters"
 
 total_characters_nospaces = text.gsub(/\s+/, "").length #replaces spaces with nothing and stores the new string in total...nospaces
 puts "#{total_characters_nospaces} chracters excluding the spaces"
+
+#counting words
+#the 2 ways to do this is scan and split. both accept regex as arguments
+
+word_count = text.split.length
+puts "#{word_count} words"
