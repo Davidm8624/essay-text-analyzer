@@ -3,9 +3,7 @@
 #   puts line
 # end
 
-#above is just a test to check if i can read the file correctly
-
-
+# above is just a test to check if i can read the file correctly
 
 # ____________________________________________________________________________________________________
 # line_count = 0
@@ -27,24 +25,24 @@ text = lines.join
 
 puts "#{line_count} lines"
 
-#this wasy should technacly be bettwer becaue it is simpler and uses more optimized methods to get the same thing, il need to read more of the docs to get ore stuff from it though
-#nothing wrong with the first way tho (starting on like 24)
+# this wasy should technacly be bettwer becaue it is simpler and uses more optimized methods to get the same thing, il need to read more of the docs to get ore stuff from it though
+# nothing wrong with the first way tho (starting on like 24)
 
-#how 2 count characters:
+# how 2 count characters:
 
-total_characters = text.length #thsi parts works because in the last bit of code above after we counted the lines we deposited them into a single string (text) and then jsut count this part
+total_characters = text.length # thsi parts works because in the last bit of code above after we counted the lines we deposited them into a single string (text) and then jsut count this part
 puts "#{total_characters} characters"
 
-total_characters_nospaces = text.gsub(/\s+/, "").length #replaces spaces with nothing and stores the new string in total...nospaces
+total_characters_nospaces = text.gsub(/\s+/, "").length # replaces spaces with nothing and stores the new string in total...nospaces
 puts "#{total_characters_nospaces} chracters excluding the spaces"
 
-#counting words
-#the 2 ways to do this is scan and split. both accept regex as arguments
+# counting words
+# the 2 ways to do this is scan and split. both accept regex as arguments
 
 word_count = text.split.length
 puts "#{word_count} words"
 
-#sentences & paragraphs
+# sentences & paragraphs
 
 paragraph_count = text.split(/\n\n/).length
 puts "#{paragraph_count} paragraphs"
